@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-FILEPATH=/home/fede/Documents/logs/logs_casa/NOC/logs_casa_NOC/
-OUTPATH=/home/fede/Documents/copy_logs/logs_casa/NOC/
+FILEPATH=/"path_to_the _input_logs_directory"/
+OUTPATH=/"path_to_the _output_logs_directory"/
 
 echo "Transforming to csv ..."
 for log in $(ls $FILEPATH); do
