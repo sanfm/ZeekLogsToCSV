@@ -21,7 +21,7 @@ cat $FILEIN | zeek-cut -c -d > $FILEOUT
 ```
 
 -d option in the zeek-cut tool stands for changing the timestamp to a human-readeble format.
--c option is used for saving the header, but doesn´t save the last line, so it isn´t necesary delete the last line in another step.
+-c option is used for saving the header, but doesn´t save the last line, so it isn´t necesary delete the last line in another step.<br />
 💡 If you don´t want to use zeek-cut (because you don´t have acces to it in your pc or you just don´t want to change the default time stamp format), comment the line above and uncomment the following line in the script in order to remove the last line that has not been removed by not using the -c option to zeek-cut.
 
 ```
@@ -57,4 +57,31 @@ sed -i 's/\t/,/g' $FILEOUT
 
 ![alt text](https://github.com/fedemoles/ZeekLogsToCSV/blob/main/images/csv_log.PNG)
 
-The image above show the final output once the script has been executed. It present a csv format saving only the field names headers.
+The image above show the final output once the script had been executed. It present a csv format saving only the fields names headers.
+
+
+## Getting started
+
+I guess if you landed in this repository, you would probably know how to clone or download the repository, but in case you don´t just follow the steps.
+
+You can just download a ZIP with all the files in the repository, just click in the green box "Code" and select "Download ZIP". (Keep in mind that if you use this method to obtain the repository, if an update occour and you want to get it, you should download the entire reposotory again, while using the git cli, you will be able to pull the changes made only in the files updated).
+
+You can also clono the repository using git, just type:
+
+```
+git clone https://github.com/fedemoles/ZeekLogsToCSV.git
+```
+
+## Running the script
+
+Before running the script. You will need to change the variables "FILEPATH" and "OUTPATH". These variables indicate the location of the original logs, and the location where the new logs will be saved in csv format respectively.
+
+Go to the directory where the script "ZeekToCSV.sh" is located and type:
+
+```
+sh ZeekToCSV.sh
+```
+
+## Examples
+
+In the examples folder, you can find a few logs in the original Zeek format (examples/zeek) and the same logs converted to csv can be found in that folder (examples/csv).
