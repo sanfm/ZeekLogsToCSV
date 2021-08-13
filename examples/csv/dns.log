@@ -1,0 +1,2 @@
+ts,uid,id.orig_h,id.orig_p,id.resp_h,id.resp_p,proto,trans_id,rtt,query,qclass,qclass_name,qtype,qtype_name,rcode,rcode_name,AA,TC,RD,RA,Z,answers,TTLs,rejected
+2021-08-06T20:33:10+0200,C6ZfcbA60NaYAoZq5,10.1.1.155,54705,192.168.2.1,53,udp,31301,-,10.1.1.10.in-addr.arpa,1,C_INTERNET,12,PTR,3,NXDOMAIN,F,F,T,F,0,-,-,T

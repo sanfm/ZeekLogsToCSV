@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ftp
+#open	2021-08-08-15-53-13
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	user	password	command	arg	mime_type	file_size	reply_code	reply_msg	data_channel.passive	data_channel.orig_h	data_channel.resp_h	data_channel.resp_p	fuid
+#types	time	string	addr	port	addr	port	string	string	string	string	string	count	count	string	bool	addr	addr	port	string
+1628274773.078409	CpyaOw9bv0HZgjOvl	10.1.1.150	52080	10.1.1.10	21	usuarioftp	<hidden>	PORT	10,1,1,150,174,231	-	-	200	PORT command successful. Consider using PASV.	F	10.1.1.10	10.1.1.150	44775	-
+1628274773.079294	CpyaOw9bv0HZgjOvl	10.1.1.150	52080	10.1.1.10	21	usuarioftp	<hidden>	RETR	ftp://10.1.1.10/./10megas.txt	<unknown>	10485760	226	Transfer complete.	-	-	-	-	Fa6syE4qTalkFcvXn
+1628274780.165789	CpyaOw9bv0HZgjOvl	10.1.1.150	52080	10.1.1.10	21	usuarioftp	<hidden>	PORT	10,1,1,150,187,187	-	-	200	PORT command successful. Consider using PASV.	F	10.1.1.10	10.1.1.150	48059	Fa6syE4qTalkFcvXn
+1628274780.167124	CpyaOw9bv0HZgjOvl	10.1.1.150	52080	10.1.1.10	21	usuarioftp	<hidden>	RETR	ftp://10.1.1.10/./512megas.txt	<unknown>	536870912	150	Opening BINARY mode data connection for 512megas.txt (536870912 bytes).	-	-	-	-	Fkuj1eUHwjOy7iu84
+#close	2021-08-08-15-53-15
