@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-FILEPATH=/"path_to_the _input_logs_directory"/
-OUTPATH=/"path_to_the _output_logs_directory"/
+FILEPATH=/"path_to_the_input_logs_directory"/ #path to input logs directory 
+OUTPATH=/"path_to_the_output_logs_directory"/ #path to output logs directory
 
 echo "Transforming to csv ..."
 for log in $(ls $FILEPATH); do
@@ -11,8 +11,12 @@ for log in $(ls $FILEPATH); do
 	FILEOUT=$OUTPATH$log
 
 	# -d option in zeek-cut convert time values into 
-	#human-readable format. %Y-%m-%dTH%:%M:%S
+	# human-readable format. %Y-%m-%dTH%:%M:%S
 	cat $FILEIN | zeek-cut -c -d > $FILEOUT
+	
+	# If you don´t want to use zeek-cut, comment the line above
+	# and uncomment the line below
+	#sed -i '$d' $FILEOUT
 
 	# Remove line 8
 	sed -i '8d' $FILEOUT
