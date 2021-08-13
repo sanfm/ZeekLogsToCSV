@@ -1,6 +1,6 @@
 # ZeekLogsToCSV
 A simple Bash script made for transform Zeek logs into a csv (comma-separated values) format.
-The operation of the script depends on the sed command, since making use of this command unnecessary lines will be removed and certain characters will be replaced.
+The operation of the script depends on the sed command. Making use of this command, unnecessary lines will be removed and certain characters will be replaced.
 
 ## Line by line explanation
 Take the image below as a reference of the structure of any zeek log file in its default format (tsv).
@@ -66,7 +66,7 @@ I guess if you landed in this repository, you would probably know how to clone o
 
 You can just download a ZIP with all the files in the repository, just click in the green box "Code" and select "Download ZIP". (Keep in mind that if you use this method to obtain the repository, if an update occour and you want to get it, you should download the entire reposotory again, while using the git cli, you will be able to pull the changes made only in the files updated).
 
-You can also clono the repository using git, just type:
+You can also clone the repository using git, just type:
 
 ```
 git clone https://github.com/fedemoles/ZeekLogsToCSV.git
