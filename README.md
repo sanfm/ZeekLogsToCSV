@@ -5,7 +5,7 @@ The operation of the script depends on the sed command, since making use of this
 ## Line by line explanation
 Take the image below as a reference of the structure of any zeek log file in its default format (tsv).
 
-!!!!!!!insertar imagen¡¡¡¡¡¡¡¡¡¡
+![alt text](https://github.com/fedemoles/ZeekLogsToCSV/blob/main/images/tsv_log.PNG)
 
 Almost all lines in the header are not really of interest from an log analysis perspective, lines 1 to 6 and line 8 will be deleted.
 Line 7 will be saved since it contains the fields name.
@@ -51,3 +51,10 @@ The last thing left to do is replace the tabs "\ t" with commas "," to go from t
 ```
 sed -i 's/\t/,/g' $FILEOUT
 ```
+
+
+#### Final output
+
+![alt text](https://github.com/fedemoles/ZeekLogsToCSV/blob/main/images/csv_log.PNG)
+
+The image above show the final output once the script has been executed. It present a csv format saving only the field names headers.
