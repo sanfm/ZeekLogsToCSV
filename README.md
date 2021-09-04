@@ -60,6 +60,11 @@ sed -i 's/\t/,/g' $FILEOUT
 The image above show the final output once the script had been executed. It present a csv format saving only the fields names headers.
 
 
+## ZeekToCSV_no_headers.sh
+
+This script is used for the same purpose than ZeekToCSV.sh, but this time all headers are remove form the csv file
+
+
 ## Getting started
 
 I guess if you landed in this repository, you would probably know how to clone or download the repository, but in case you don´t just follow the steps.
@@ -80,6 +85,7 @@ Go to the directory where the script "ZeekToCSV.sh" is located and type:
 
 ```
 sh ZeekToCSV.sh
+sh ZeekToCSV_no_headers.sh
 ```
 
 ## Examples
