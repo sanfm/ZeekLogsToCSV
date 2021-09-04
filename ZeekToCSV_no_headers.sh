@@ -12,7 +12,7 @@ for log in $(ls $FILEPATH); do
 	# Removing all headers and changing timestamp format
 	cat $FILEIN | zeek-cut -D "%Y-%m-%d %H:%M:%S" > $FILEOUT
 	
-	# Change existing commas to spaces so there is no missundertud
+	# Change existing commas to spaces so there is no misunderstood
 	# when transforming to csv
 	sed -i 's/,/ /g' $FILEOUT
 	
