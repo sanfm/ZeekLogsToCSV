@@ -74,7 +74,7 @@ You can just download a ZIP with all the files in the repository, just click in 
 You can also clone the repository using git, just type:
 
 ```
-git clone https://github.com/fedemoles/ZeekLogsToCSV.git
+git clone https://github.com/sanfm/ZeekLogsToCSV.git
 ```
 
 ## Running the script
